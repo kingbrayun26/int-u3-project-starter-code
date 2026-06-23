@@ -24,11 +24,38 @@ body {
     background-color: black;
     text-align: center;
     padding: 20px;
+    font-size: 20px;
 }
+
+
+
+.my-button {
+  /* Makes the link behave like a block/button element */
+  display: inline-block; 
+  
+  /* Adds spacing inside and sets colors */
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  
+  /* Removes the default underline from the link text */
+  text-decoration: none; 
+  
+  /* Rounds the corners and adds a pointer cursor */
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Changes the background color when hovering over the button */
+.my-button:hover {
+  background-color: #0056b3;
+}
+
+
 
 /* Style the title of your story */
 .title {
-    font-size: 24px;
+    font-size: 26px;
     font-weight: bold;
     margin-bottom: 20px;
     color: blue
@@ -86,8 +113,7 @@ button {
 
 button:hover {
     background-color: #0056b3;
-    hover: cursor;
-    
+    cursor: pointer;
 }
 
 /* Style the screens for option one and option two */

@@ -1,11 +1,16 @@
 // Declare variables below to save the different divs of your story.
-listScreen = document.querySelector('.list-screen');
-optionOneScreen = document.querySelector('.option-one-screen');
-optionTwoScreen = document.querySelector('.option-two-screen');
-optionOneEnd = document.querySelector('.option-one-end');
-optionTwoEnd = document.querySelector('.option-two-end');
- 
 
+const music = document.getElementById('bgMusic');
+
+function startBackgroundMusic() {
+    music.play().then(() => {
+        // Remove the listener immediately so it doesn't fire on every single click
+        window.removeEventListener('click', startBackgroundMusic);
+    }).catch(err => console.log("Waiting for distinct interaction...", err));
+}
+
+// Listen for the first click on the window
+window.addEventListener('click', startBackgroundMusic);
 
 
 
