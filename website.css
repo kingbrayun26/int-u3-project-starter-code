@@ -1,89 +1,47 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: blue;
-    text-align: center;
-    padding: 20px;
-    font-size: 20px;
-}
-
-
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f4f7f6;
+    background-color: #121820;
+    color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    height: 100vh;
+    margin: 0;
 }
 
 .quiz-container {
-    background-color: #ffffff;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    max-width: 500px;
-}
-
-h1 {
+    background-color: #1a2332;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    width: 450px;
     text-align: center;
-    margin-bottom: 20px;
-    color: #333;
 }
 
-.question {
-    font-size: 1.2rem;
-    font-weight: bold;
-    margin-bottom: 20px;
-    color: #333;
-}
-
-.options-container {
+.btn-grid {
     display: flex;
     flex-direction: column;
-    gap: 12px;
-    margin-bottom: 20px;
-}
-
-.option {
-    padding: 12px;
-    border: 2px solid #ddd;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.2s, border-color 0.2s;
-}
-
-.option:hover {
-    background-color: #f0f0f0;
-}
-
-.option.selected {
-    border-color: #007bff;
-    background-color: #e6f2ff;
+    gap: 10px;
+    margin-top: 20px;
 }
 
 button {
-    width: 100%;
-    padding: 12px;
-    background-color: #007bff;
+    background-color: #25334a;
     color: white;
-    border: none;
-    border-radius: 5px;
-    font-size: 1rem;
+    border: 2px solid #4ade80;
+    padding: 12px;
+    border-radius: 6px;
     cursor: pointer;
-    transition: background-color 0.2s;
+    font-size: 1rem;
+    transition: background 0.3s, transform 0.2s;
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: #4ade80;
+    color: #121820;
+    transform: scale(1.02);
 }
 
 .hidden {
-    display: none;
+    display: none !important;
 }

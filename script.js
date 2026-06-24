@@ -14,6 +14,14 @@ window.addEventListener('click', startBackgroundMusic);
 
 
 
+document.addEventListener("DOMContentLoaded", () => {
+  const splashScreen = document.getElementById("splash-screen");
+
+  // Wait 2000 milliseconds (2 seconds) then hide splash screen
+  setTimeout(() => {
+    splashScreen.classList.add("splash-hidden");
+  }, 2000);
+});
 
 
 

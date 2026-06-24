@@ -1,37 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-</head>
-<body>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Interactive Quiz</title>
+    <title>Jak and Daxter Quiz</title>
     <link rel="stylesheet" href="website.css">
 </head>
 <body>
-    <div class="quiz-container">
-        <h1>Web Dev Quiz</h1>
-        <div id="quiz">
-            <div class="question" id="question-text">Loading question...</div>
-            <div class="options-container" id="options-box">
-                <!-- Options will be injected here by JavaScript -->
-            </div>
+    <div class="quiz-container" id="quiz">
+        <h1>Precursor Legacy Quiz</h1>
+        <div id="question-container">
+            <h2 id="question-text">Loading question...</h2>
+            <div id="answer-buttons" class="btn-grid"></div>
         </div>
-        <button id="submit-btn">Submit Answer</button>
-        <div id="result-container" class="hidden"></div>
+        <button id="next-btn" class="hidden">Next</button>
+        <div id="score-container" class="hidden">
+            <h2 id="score-text">You scored X out of Y!</h2>
+            <button id="restart-btn">Restart Quiz</button>
+        </div>
     </div>
-    
-    <script src="website.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
 
-    <!-- The button element with a specific ID -->
-    <button id="myButton" class="btn">Go to Next Page</button>
-
-    <script src=".js"></script>
-</body>
-</html>
