@@ -15,7 +15,7 @@ const player = {
     velocityX: 0,
     velocityY: 0,
     speed: 5,
-    jumpForce: 12,
+    jumpForce: 17,
     grounded: false,
     color: "#3a7bd5" // Jak's blue tunic vibe
 };
